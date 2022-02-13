@@ -51,7 +51,7 @@ function ShowCars() {
 	  // output data of each row
 	  while($row = mysqli_fetch_assoc($result)) {
 	  	$delurl = "[<a href='https://codd.cs.gsu.edu/~mwarren15/week5index.php?cmd=delete&id={$row['id']}'>delete</a>]";
-		echo "id:" . $row["id"]. "– Make: "  . $row["make"]. " $delurl<br>";
+		echo"id:" . $row["id"]. "– Make: "  . $row["make"]. " $delurl<br>";
 	  }
 	} else {
 	  echo "0 results";
