@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Morgan's Week 2</title>
+        <style>
+		header, footer {
+            position: absolute;
+			background: white;
+			width: 99%;
+            color:black;
+            border: 1px solid black;
+
+		}
+		header {
+			height: 27vh;
+		}
+        #header-img{
+            width: 100%;
+            height: 143px;
+            border: 1px solid black;
+        }
+
+        footer{
+            height: 10vh;
+            bottom:0;
+        }
+
+        .leftsidebar {
+            margin-top: -5px;
+            font-size: 20px;
+            background-color: rgb(255, 218, 224);
+            height: 550px;
+            width: 20%;
+            border: 1px solid black;    
+        }
+
+
+        .design{
+            font-size: 20px;
+            float: right;
+        }
+
+        .copyright{
+            font-size: 20px;
+        }
+
+        .nav{
+            position: relative;
+            width:99%;
+        }
+
+        .nav a{
+            position: relative;
+            Left:85%;
+            color:black;
+            text-decoration: none;
+        }
+
+        #body-text{
+            position: absolute;
+            bottom: 68%;
+            left: 21%;
+            font-size: 20px;
+            
+        }
+		</style>
+
+
+        <script>
+            function createAlert() {
+            alert("Pretty sunset, right?");
+            return(false);
+            }
+
+            function changeBody(){
+                document.getElementById("body-text").innerHTML = "Hawaii has the prettiest sunsets!"
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <h2>
+                <div class="nav">
+                    <a href= "javascript:changeBody();">Update Body | </a>                    
+                    <a href='http://www.google.com' onclick="createAlert();return(false);">Alert</a>
+
+                </div>
+            </h2>
+            <img id=header-img
+                    src=https://i.pinimg.com/originals/09/96/1a/09961a1014ae88caee5f0644ec0d0e33.jpg>
+
+
+            <div class="leftsidebar">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. It has survived not only five centuries, but also the leap into 
+                    electronic typesetting, remaining essentially unchanged. It was popularised in 
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    and more recently with desktop publishing software like Aldus PageMaker including 
+                    versions of Lorem Ipsum.
+                </p>
+            </div>
+            
+        </header>
+
+
+        <footer>
+            <div class="design">
+                <p>Designed by Morgan Warren<p>    
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2022 Morgan Warren, All Rights Reserved<p></p>
+            </div>
+            
+        </footer>
+
+
+        <div id="body-text">
+            Pink sunsets are often called alpenglows!
+        </div>
+
+    </body>
+</html>
