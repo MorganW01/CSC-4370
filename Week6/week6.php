@@ -1,4 +1,16 @@
 <?php
+
+    if(!isset($_COOKIE['userid'])) {
+        header("Location: week6Login.php");
+    }
+
+    else {
+        echo "userid: <br>";
+        echo $_COOKIE['userid'];
+
+    }
+
+
     define( 'DB_NAME', 'mwarren15');
     define( 'DB_USER', 'mwarren15');
     define( 'DB_PASSWORD', 'mwarren15');
