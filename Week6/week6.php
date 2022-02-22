@@ -5,8 +5,8 @@
     }
 
     else {
-        echo "userid: <br>";
-        echo $_COOKIE['userid'];
+        echo "userid: {$_COOKIE['userid']}<br>";
+
 
     }
 
