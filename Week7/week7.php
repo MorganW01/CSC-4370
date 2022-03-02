@@ -4,7 +4,7 @@
         <script src="./jquery/jquery-3.6.0.min.js"></script>
     <head>
     <body>
-        This is an ajax example
+        This is an updated week 5 website using ajax!
         <form onsubmit ="return(insertInfo())">
             <input type = text id = firstname>
             <input type = text id = lastname>
